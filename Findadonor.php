@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -14,16 +15,55 @@
        <div class="card text-black" style="border-radius: 25px;">
          <div class="card-body p-md-5">
            <div class="row justify-content-center">
+           <?php
+
+            require_once"db.php";
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+              $name = $_POST['name'];
+              $bloodgroup = $_POST['bloodgrp'];
+              $district = $_POST['district'];
+              $state = $_POST['state'];
+              $query = "SELECT * FROM users WHERE bloodgroup='$bloodgroup' AND district='$district' AND state='$state'";
+              $result = mysqli_query($con,$query);
+              if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_array($result)){
+                  echo '<table class="table table-striped">';
+                  echo "<thead>";
+                  echo "<tr>";
+                  echo '<th scope="col">Name</th>';
+                  echo '<th scope="col">Blood Group</th>';
+                  echo '<th scope="col">District</th>';
+                  echo '<th scope="col">State</th>';
+                  echo '<th scope="col">Contact</th>';
+                  echo "</tr>";
+                  echo "</thead>";
+                  echo "<tbody>";
+                  echo "<tr>";
+                  echo "<td>".$row['full_name']."</td>";
+                  echo "<td>".$row['bloodgroup']."</td>";
+                  echo "<td>".$row['district']."</td>";
+                  echo "<td>".$row['state']."</td>";
+                  echo "<td>".$row['phone']."</td>";
+                  echo "</tr>";
+                  echo "</tbody>";
+                  echo "</table>";
+                }
+              }
+
+            }
+
+            ?>
              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+               
 
                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Enter the Details Below-->></p>
 
-               <form class="mx-1 mx-md-4">
+               <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="mx-1 mx-md-4">
 
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example1c" class="form-control" />
+                     <input type="text" id="form3Example1c" class="form-control" name="name" />
                      <label class="form-label" for="form3Example1c">Your Name</label>
                    </div>
                  </div>
@@ -31,7 +71,7 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example3c" class="form-control" />
+                     <input type="text" id="form3Example3c" class="form-control" name="bloodgrp"/>
                      <label class="form-label" for="form3Example3c">Blood Group you are looking for</label>
                    </div>
                  </div>
@@ -39,7 +79,7 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example4c" class="form-control" />
+                     <input type="text" id="form3Example4c" class="form-control" name="state" />
                      <label class="form-label" for="form3Example4c">State</label>
 
 
@@ -49,7 +89,7 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example4cd" class="form-control" />
+                     <input type="text" id="form3Example4cd" class="form-control" name="district"/>
                      <label class="form-label" for="form3Example4cd">District</label>
                    </div>
                  </div>
@@ -67,7 +107,7 @@
                  </div>
 
                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                   <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                 <input type="submit" class="btn btn-primary mb-2" name="submit" value="Find Now">
                  </div>
 
                </form>
@@ -85,6 +125,7 @@
    </div>
  </div>
 </section>
+
 
 
 
