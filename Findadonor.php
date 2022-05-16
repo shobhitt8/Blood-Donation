@@ -49,6 +49,9 @@
                   echo "</table>";
                 }
               }
+              else{
+                echo "<h2>No Donor Found</h2>";
+              }
 
             }
 
