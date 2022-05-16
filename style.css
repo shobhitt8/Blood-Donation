@@ -1,0 +1,186 @@
+body{
+  background-color: #DCDCDC;
+}
+.a{
+
+width: 945px;
+height: 465px;
+left: 29px;
+top: 102px;
+background-image:url("bd2.jpeg");
+border-radius: 29px;
+margin-top: 5px;
+}
+.sidebox{
+       position: absolute;
+width: 520px;
+height: 450px;
+left: 977px;
+top: 70px;
+
+background: #F4D3D3;
+border-radius: 29px;
+
+   }
+
+ .diff{
+   position: absolute;
+width: 476px;
+height: 406px;
+left: 50px;
+top: 30px;
+
+font-family: 'Georgia',serif;
+font-style: normal;
+font-weight: 400;
+font-size: 39px;
+line-height: 46px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   }
+
+   .diff1{
+     position: absolute;
+width: 476px;
+height: 406px;
+left: 50px;
+top: 200px;
+
+font-family: 'Georgia',serif;
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 34px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+     }
+
+     .diff2{
+       position: absolute;
+width: 476px;
+height: 406px;
+left: 150px;
+top: 310px;
+
+font-family: 'Lexend Peta';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 34px;
+
+color: #FF0000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+       }
+       .diff3{
+         position: absolute;
+width: 476px;
+height: 406px;
+left: 100px;
+top: 350px;
+
+font-family: 'Lexend Peta';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       }
+       .diff4{
+         position: absolute;
+width: 476px;
+height: 406px;
+left: 290px;
+top: 350px;
+
+font-family: 'Lexend Peta';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       }
+
+       #register{
+       position: absolute;
+width: 231px;
+height: 54px;
+left: 200px;
+top: 315px;
+
+background: #295F66;
+border-radius: 21px;
+
+position: absolute;
+width: 165px;
+height: 40px;
+left: -500px;
+top: 525px;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+border-radius: 21px;
+
+/* identical to box height */
+
+
+color: #DCDCDC;
+
+
+   }
+   #register:hover {background-color: #b0c4de;}
+   #find{
+      position: absolute;
+width: 302px;
+height: 54px;
+left: 609px;
+top: 500px;
+
+background: #295F66;
+border-radius: 21px;
+position: absolute;
+width: 247px;
+height: 40px;
+left: -175px;
+top: 525px;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+border-radius: 21px;
+
+/* identical to box height */
+
+
+color: #DCDCDC;
+
+  }
+  #find:hover {background-color:#b0c4de ;}
+
+
+  #foot{
+    position: absolute;
+    width:100%;
+    margin-top:650px;
+    left:-490px;
+
+
+  }
