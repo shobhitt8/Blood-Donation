@@ -12,8 +12,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $query = "INSERT into users (full_name, bloodgroup, state,district, phone) VALUES ('$name', '$bloodgrp', '$state', '$district', '$num')";
   $result = mysqli_query($con, $query);
   if($result){
-     echo "You are registered Successfully.";
+     //echo "You are registered Successfully.";
      //echo "Go to Sign In Page.<a href='sign-in.php'>Link</a>";
+     echo'<div class="alert alert-success" role="alert">';
+     echo'<h4 class="alert-heading">Well done!</h4>';
+     echo'<p>Aww yeah, you successfully read this important alert message.</p>';
+     echo'</div>';
   }
   else{
      echo "Something went wrong";
