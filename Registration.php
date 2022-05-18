@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      //echo "Go to Sign In Page.<a href='sign-in.php'>Link</a>";
      echo'<div class="alert alert-success" role="alert">';
      echo'<h4 class="alert-heading">Well done!</h4>';
-     echo'<p>Aww yeah, you successfully read this important alert message.</p>';
+     echo'<p>You have successfully registered.Thank you!!!!</p>';
      echo'</div>';
   }
   else{
