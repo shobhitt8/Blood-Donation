@@ -57,7 +57,7 @@
 
             ?>
              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-               
+
 
                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Enter the Details Below-->></p>
 
@@ -74,16 +74,113 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example3c" class="form-control" name="bloodgrp"/>
-                     <label class="form-label" for="form3Example3c">Blood Group you are looking for</label>
+                  <!--   <input type="text" id="form3Example3c" class="form-control" name="bloodgrp"/>
+                     <label class="form-label" for="form3Example3c">Blood Group you are looking for</label> -->
+                     <input list="bloodgrp"  id="form3Example3c" class="form-control" name="bloodgrp" placeholder="Blood Group" required>
+                   <datalist id="bloodgrp">
+                   <option value="A+">
+                   <option value="A-">
+                   <option value="B+">
+                   <option value="B-">
+                   <option value="AB+">
+                   <option value="AB-">
+                   <option value="O+">
+                   <option value="O-">
+
+                     </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                 </datalist>
+                 <label  for="form3Example3c">Blood Group</label>
                    </div>
                  </div>
 
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example4c" class="form-control" name="state" />
-                     <label class="form-label" for="form3Example4c">State</label>
+                    <!-- <input type="text" id="form3Example4c" class="form-control" name="state" />
+                     <label class="form-label" for="form3Example4c">State</label> -->
+                     <input list="state"  id="form3Example3c" class="form-control" name="state" placeholder="State" required>
+                    <datalist id="state">
+                    <option value="Andhra Pradesh">
+                    <option value="Arunachal Pradesh">
+                    <option value="Andaman and Nicobar">
+                    <option value="Assam">
+                    <option value="Bihar">
+                    <option value="Chattisgarh">
+                    <option value="Dadra and Nagar Haveli">
+                    <option value="Daman and Diu">
+                    <option value="Delhi">
+                    <option value="Goa">
+                    <option value="Gujrat">
+                    <option value="Haryana">
+                    <option value="Himachal Pradesh">
+                    <option value="Jammu and Kashmir">
+                    <option value="Jharkhand">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Lakshadweep">
+                    <option value="Madhya Pradesh">
+                    <option value="Maharashtra">
+                    <option value="Manipur">
+                    <option value="Meghalaya">
+                    <option value="Mizoram">
+                    <option value="Nagaland">
+                    <option value="Odissa">
+                    <option value="Puducherry">
+                    <option value="Punjab">
+                    <option value="Rajasthan">
+                    <option value="Sikkim">
+                    <option value="Tamil Nadu">
+                    <option value="Telangana">
+                    <option value="Tripura">
+                    <option value="Uttar Pradesh">
+                    <option value="Uttarakhand">
+                    <option value="West Bengal">
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </option>
+                    </datalist>
+                    <!--  <input type="text" id="form3Example4c" class="form-control" name="state"/> -->
+                        <label  for="form3Example4c">State</label>
+
 
 
                    </div>
@@ -92,7 +189,7 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="text" id="form3Example4cd" class="form-control" name="district"/>
+                     <input type="text" id="form3Example4cd" class="form-control" name="district" required/>
                      <label class="form-label" for="form3Example4cd">District</label>
                    </div>
                  </div>
@@ -103,6 +200,7 @@
                      type="checkbox"
                      value=""
                      id="form2Example3c"
+                     required
                    />
                    <label class="form-check-label" for="form2Example3">
                      I agree all statements in <a href="#!">Terms of service</a>
